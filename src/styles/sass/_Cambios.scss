@@ -1,68 +1,10 @@
 .Cambios-page{
-  // .body{
-  //   display: flex;
-  //   justify-content: center;
-  // }
-
-  .items-body1 {
-    // background-color: red;
-   
-  }
-
-  .items-body2{
-    // background-color: blue;
-  }
-  
-  .ImgFondo{
-   width: 100%;
-  //  float: right;
-  //  margin:auto,0px auto,0px ;
-  }
-
-  .card-footer{
-    background-color: #6a208c;
-    color: white;
-    // background-color: #ffb703;
-
-  }
-  .card-footer p{
-    margin-bottom:0px !important;
-
-  }
-  .card-header{
-    background-color: #a98dca;
-  }
-
-  .card1{
-    // border: none;
-    // box-shadow: 0.4px 2px 0 rgb(147, 87, 206), 0 6px 8px rebeccapurple;
-    border: 1px solid #a98dca !important;
+  .card-convertidor{
     box-shadow: 1px 1px 3px rgb(147, 87, 206);
   }
-  .input-group-text{
-    background-color:#ffd627;
 
-  }
-  .card2{
+  .card-tasa{
     border: none;
     box-shadow: 1px 1px 3px rgb(147, 87, 206);
-    // box-shadow: 0.4px 2px 0 rgb(147, 87, 206), 0 6px 8px rebeccapurple;
-
   }
-  .card2 p{
-    margin: 0px;
-
-  }
-
- .padding0{
-   padding: 0px;
-   background-color: white;
- }
-
 }
-
-// amarilloC =#f1e40e
-// amarilloB =#f7aa0a
-// purpleM=#a98dca
-// purpleb =#693aa4
-// #e0d2ed
