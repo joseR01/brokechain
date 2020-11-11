@@ -1,0 +1,175 @@
+.card1{
+  height: 500px;
+  margin: auto;
+  width: 40%;
+  min-width: 300px;
+  color: #6a208c;
+}
+h1{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: #6a208c 3px solid;
+}
+.Bancos{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.Bancos .itemc1, .Bancos .itemc2, .Bancos .itemc3{
+  width: 80px;
+}
+
+
+.Tasas{
+  /* background-color: rgb(105, 122, 177); */
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.Tasas .itemc1{
+  border: 4px solid #6a208c;
+  border-radius: 30px;
+  display: flex;
+  width: 50%;
+  position: relative;
+  margin-bottom: 35px;
+}
+.Tasas .itemc1 p{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: center;
+  color: #6a208c;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.Tasas .itemc1 img{
+  width: 60px;
+  margin-left: 30px;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.Tasas .itemc3{
+  border: 4px solid #6a208c;
+  border-radius: 30px;
+  display: flex;
+  width: 35%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.Tasas .itemc3 p{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: center;
+  color: #6a208c;
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+.Tasas .itemc3 img{
+  width: 40px;
+  margin-left: 30px;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.Cambio{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Cambio .itemc1{
+  border: 4px solid #6a208c;
+  border-radius: 30px;
+  display: flex;
+  width: 35%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Cambio .itemc1 p{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: center;
+  color: #6a208c;
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+.Cambio .itemc1 img{
+  width: 40px;
+  margin-left: 30px;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.Cambio .itemc2{
+  border: 4px solid #6a208c;
+  border-radius: 30px;
+  display: flex;
+  width: 35%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Cambio .itemc2 p{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: center;
+  color: #6a208c;
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+.Cambio .itemc2 img{
+  width: 40px;
+  margin-left: 30px;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.flecha{
+  width: 40px;
+  height: 25px;
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.boton{
+  display: flex;
+  justify-content: center;
+  background-color: #6a208c;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  width: auto;
+  padding: 5px 80px 5px 80px;
+}
+
+.boton:hover{
+  background-color: #e8e6e9;
+  border-radius: 5px;
+  color: #6a208c;
+  font-size: 20px;
+  margin: auto;
+  width: auto;
+  border: #6a208c solid 1px;
+  outline: #6a208c;
+  padding: 5px 80px 5px 80px;
+
+}

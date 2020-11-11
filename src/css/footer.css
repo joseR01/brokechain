@@ -1,0 +1,20 @@
+.backgrounFoter{
+  background-color:rgb(205, 218, 230);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  color:#6a208c;
+  text-align: center;
+  align-self: flex-end;
+
+}
+
+.item1{ 
+width: 30%;
+}
+
+.item3 ul{
+  list-style: none;
+}
