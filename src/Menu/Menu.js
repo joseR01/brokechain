@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 const Menu = () => {
   return (
     <div className="Menu-page">
-      <Navbar className=" bg-menu " expand="lg" >
+      <Navbar bg="primary" expand="lg" >
       <Navbar.Brand href="#home" className={"text-white font-weight-bold "}>
       {/* <img
         src={logo}

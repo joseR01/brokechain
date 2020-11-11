@@ -1,6 +1,5 @@
 import React from 'react'
-import './styles/bootstrap.min.css';
-import './css/app.css'
+// import './styles/bootstrap.min.css';
 import Menu from './Menu/Menu.js';
 import Footer from './Footer/Footer';
 import Chats from './chat/Chats'
@@ -17,7 +16,6 @@ function App() {
             <Switch className="bodyHeigh" >
                 <Route exact path="/chat" render={()=> <Chats/>}></Route>
                 <Route exact path="/cambios" render={()=> <Cambios/>}></Route>
-
             </Switch>
             <Footer/>
 

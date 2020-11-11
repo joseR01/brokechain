@@ -34,8 +34,10 @@
   }
 
   .card1{
-    border: none;
-    box-shadow: 0.4px 2px 0 rgb(147, 87, 206), 0 6px 8px rebeccapurple;
+    // border: none;
+    // box-shadow: 0.4px 2px 0 rgb(147, 87, 206), 0 6px 8px rebeccapurple;
+    border: 1px solid #a98dca !important;
+    box-shadow: 1px 1px 3px rgb(147, 87, 206);
   }
   .input-group-text{
     background-color:#ffd627;
@@ -44,6 +46,8 @@
   .card2{
     border: none;
     box-shadow: 1px 1px 3px rgb(147, 87, 206);
+    // box-shadow: 0.4px 2px 0 rgb(147, 87, 206), 0 6px 8px rebeccapurple;
+
   }
   .card2 p{
     margin: 0px;
@@ -54,9 +58,7 @@
    padding: 0px;
    background-color: white;
  }
-.btn-primary {
-   background-color: #6a208c;
- }
+
 }
 
 // amarilloC =#f1e40e

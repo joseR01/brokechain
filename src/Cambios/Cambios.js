@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button, Card, Col, Form, FormControl, InputGroup, Row } from 'react-bootstrap'
 import foto from '../img/foto.png'
 import banesco from '../img/banescop.png'
-import bod from '../img/bodp.png'
+import bod from '../img/bodp2.png'
 import mercantil from '../img/mercantilp.png'
 
 const bancosData = [
@@ -29,7 +29,7 @@ function Cambios() {
   return (
       <div className="Cambios-page my-auto"> 
            <Row className="body">
-              <Col xs={{ order: 'last' }} md={{ order: 'first' }} className="items-body1 col-12 col-sm-12 col-md-4 col-lg-4 "  >
+              <Col className="items-body1 col-12 col-sm-12 col-md-4 col-lg-4 "  >
                     <Card className="card1 mt-2">
                         <Card.Header>
                             {/* <img src={banesco} alt="" style={{width:"100%"}}/> */}
@@ -42,10 +42,12 @@ function Cambios() {
                             <InputGroup className="mb-2 mr-sm-2">
                               <InputGroup.Prepend>
                                 <InputGroup.Text className="padding0">
-                                  <img src={bod} style={{width:"50px"}} />
+                                  <div style={{width:"55px"}}>
+                                   <img src={bod} style={{width:"35px"}} />
+                                  </div>   
                                 </InputGroup.Text>
                               </InputGroup.Prepend>
-                              <FormControl  placeholder="0.0076" />
+                              <FormControl disabled className="bg-white"/>
                             </InputGroup> 
                           </Form.Group>
 
@@ -57,7 +59,7 @@ function Cambios() {
                                               COP
                                 </InputGroup.Text>
                               </InputGroup.Prepend>
-                              <FormControl  placeholder="100.000" />
+                              <FormControl  placeholder="Ingrese la cantidad" />
                             </InputGroup> 
                           </Form.Group>
                               
@@ -65,11 +67,11 @@ function Cambios() {
                             <Form.Label>Bolivares a Recibir </Form.Label>
                             <InputGroup className="mb-2 mr-sm-2">
                               <InputGroup.Prepend>
-                                <InputGroup.Text >
+                                <InputGroup.Text  style={{width:"57px"}}>
                                               VES
                                 </InputGroup.Text>
                               </InputGroup.Prepend>
-                              <FormControl  placeholder="21.564.789.42" />
+                              <FormControl disabled className="bg-white"/>
                             </InputGroup> 
                           </Form.Group>
                             <Button block>Enviar</Button>
@@ -80,14 +82,14 @@ function Cambios() {
                         </Card.Footer>
                     </Card>
                 </Col>
-              <Col xs={{ order: 'first' }} md={{ order: 'last' }} className="items-body2 col-12 col-sm-12 col-md-8 col-lg-8 " >
+              <Col  className="items-body2 col-12 col-sm-12 col-md-8 col-lg-8 " >
                         <h2 className="text-center">Seleciona tu banco</h2>
                             <Row>
                               {bancos.map(banco=>(
                                 <Col>
                                   <Card className="card2">
                                     <Card.Body className="text-center">
-                                      <img src={banco.foto} style={{width:"40%", height:"50px"}}/>
+                                      <img src={banco.foto} style={{height:"40px"}}/>
                                      <p>Tasa</p>
                                      <p>{banco.tasa}</p>
                                     </Card.Body>
