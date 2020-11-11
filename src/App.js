@@ -15,7 +15,7 @@ function App() {
     <div>
             <Menu />
             <Switch className="bodyHeigh" >
-                <Route exact path="/Chat" render={()=> <Chats/>}></Route>
+                <Route exact path="/chat" render={()=> <Chats/>}></Route>
                 <Route exact path="/cambios" render={()=> <Cambios/>}></Route>
 
             </Switch>
