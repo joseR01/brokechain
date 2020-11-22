@@ -4,8 +4,7 @@ import Menu from './Menu/Menu.js';
 import Footer from './Footer/Footer';
 import Chats from './chat/Chats'
 import './styles/sass/layout.scss'
-import Switch from 'react-bootstrap/esm/Switch';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Cambios from './Cambios/Cambios';
 import './css/app.css'
 function App() {
@@ -13,9 +12,11 @@ function App() {
   return (
     <div>
             <Menu />
-            <Switch className="bodyHeigh" >
+            <Switch>
+              <div className="bodyHeigh">
                 <Route exact path="/chat" render={()=> <Chats/>}></Route>
                 <Route exact path="/cambios" render={()=> <Cambios/>}></Route>
+              </div>
             </Switch>
             <Footer/>
 
