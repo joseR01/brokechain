@@ -1,9 +1,14 @@
-.Cambios-page{
-  .card-convertidor{
+.Cambios-page {
+  .column-tasas {
+    border: 3px solid rgb(236, 242, 246);
+    border-radius: 5px;
+  }
+
+  .card-convertidor {
     box-shadow: 1px 1px 3px rgb(147, 87, 206);
   }
 
-  .card-tasa{
+  .card-tasa {
     box-shadow: 1px 1px 3px rgb(147, 87, 206);
     width: 150px;
   }

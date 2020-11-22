@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar } from 'react-bootstrap'
+import { Button, Nav, Navbar } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 
 // import logo from '../img/logop.png'
@@ -22,7 +22,7 @@ const Menu = () => {
   <Nav className="ml-auto">
           <Nav.Link as={NavLink} to={"/chat"}>Chat</Nav.Link>
           <Nav.Link as={NavLink} to={"/cambios"}>Cambios</Nav.Link>
-          <Nav.Link as={NavLink} to={"/home"}>Home</Nav.Link>
+          <Button id="loginButton" className="text-white ml-4" variant="secondary">Acceder</Button>
   </Nav>
   </Navbar.Collapse>
 
