@@ -1,11 +1,13 @@
 .backgrounFoter{
-  background-color:rgb(205, 218, 230);
+  /* background-color:rgb(205, 218, 230); */
+  background-color: #3c3d41;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  color:#6a208c;
+  /* color:#6a208c; */
+  color: white;
   text-align: center;
   align-self: flex-end;
 

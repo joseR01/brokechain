@@ -11,5 +11,18 @@
   .card-tasa {
     box-shadow: 1px 1px 3px rgb(147, 87, 206);
     width: 150px;
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: all 500ms;
+
+  }
+
+  .card-tasa:hover {
+    transform: scale(1.1);
+  }
+
+  #selectBankTitle {
+    color: #666;
   }
 }

@@ -107,7 +107,7 @@ function Cambios() {
                   <Form.Label>Pesos a Cambiar </Form.Label>
                   <InputGroup className="mb-2 mr-sm-2">
                     <InputGroup.Prepend>
-                      <InputGroup.Text style={{ width: "57px" }} className="bg-secondary" >
+                      <InputGroup.Text style={{ width: "57px" }} className="bg-primary font-weight-bold text-white" >
                         COP
                                 </InputGroup.Text>
                     </InputGroup.Prepend>
@@ -133,14 +133,14 @@ function Cambios() {
                   <Form.Label>Bolivares a Recibir </Form.Label>
                   <InputGroup className="mb-2 mr-sm-2">
                     <InputGroup.Prepend>
-                      <InputGroup.Text style={{ width: "57px" }} className="bg-secondary">
+                      <InputGroup.Text style={{ width: "57px" }} className="bg-primary font-weight-bold text-white">
                         VES
                                 </InputGroup.Text>
                     </InputGroup.Prepend>
                     <FormControl disabled className="bg-white" />
                   </InputGroup>
                 </Form.Group>
-                <Button block>Enviar</Button>
+                <Button block variant="secondary" className="text-white">Enviar</Button>
               </Form>
             </Card.Body>
             <Card.Footer className="text-white">
@@ -149,14 +149,14 @@ function Cambios() {
           </Card>
         </Col>
         <Col  xl={{ span: 6, offset: 1 }} lg={8} md={7} sm={12} xs={12} >
-          <h3 className="">Seleciona tu banco</h3>
+        <h3 id="selectBankTitle" className="font-italic">Seleciona tu banco...</h3>
           <Container fluid>
             <Row className="column-tasas pt-3">
               {bancos.map(banco => (
                 <Col lg={3} md={6} sm={6} xs={12} className="text-center">
                   <Card className="card-tasa d-inline-block border-0 mb-3" >
-                    <Card.Body className="text-center">
-                      <img src={banco.foto} style={{ height: "40px" }} />
+                    <Card.Body className="text-center p-0 py-3">
+                      <img src={banco.foto} style={{ height: "40px"}} />
                       <p className="m-0 h6">Tasa</p>
                       <p className="m-0 f-08r text-muted"><FontAwesomeIcon icon={faChartLine} className="icon" />{' '}{banco.tasa}</p>
                     </Card.Body>
