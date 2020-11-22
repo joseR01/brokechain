@@ -5,9 +5,55 @@ import banesco from '../img/banescop.png'
 import bod from '../img/bodp2.png'
 import mercantil from '../img/mercantilp.png'
 import CurrencyFormat from 'react-currency-format';
-import { useRef } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChartLine } from '@fortawesome/free-solid-svg-icons'
 
 const bancosData = [
+  {
+    nombre: "BANESCO",
+    foto: banesco,
+    tasa: 0.0076,
+  },
+  {
+    nombre: "BOD",
+    foto: bod,
+    tasa: 0.0095,
+  },
+  {
+    nombre: "MERCANTIL",
+    foto: mercantil,
+    tasa: 0.0095,
+  },
+  {
+    nombre: "BANESCO",
+    foto: banesco,
+    tasa: 0.0076,
+  },
+  {
+    nombre: "BOD",
+    foto: bod,
+    tasa: 0.0095,
+  },
+  {
+    nombre: "MERCANTIL",
+    foto: mercantil,
+    tasa: 0.0095,
+  },
+  {
+    nombre: "BANESCO",
+    foto: banesco,
+    tasa: 0.0076,
+  },
+  {
+    nombre: "BOD",
+    foto: bod,
+    tasa: 0.0095,
+  },
+  {
+    nombre: "MERCANTIL",
+    foto: mercantil,
+    tasa: 0.0095,
+  },
   {
     nombre: "BANESCO",
     foto: banesco,
@@ -29,20 +75,15 @@ const bancosData = [
 function Cambios() {
   const [bancos, setBancos] = useState(bancosData)
   const [cop, setCop] = useState("")
-  const copInput = useRef(null)
-  
-  useEffect(() => {
-    if(copInput){
-      // copInput.current.focus()
-      console.log(copInput)
-    }
 
+  useEffect(() => {
+    document.getElementById("copInput").focus()
   }, [])
 
   return (
     <div className="Cambios-page my-auto">
       <Row className="body">
-        <Col className="items-body1 col-12 col-sm-12 col-md-4 col-lg-4 "  >
+        <Col className="items-body1" xl={4} lg={4} md={5} sm={12} xs={12} >
           <Card className="card-convertidor mt-2" border="primary" bg="primary">
             <Card.Header  >
               {/* <img src={banesco} alt="" style={{width:"100%"}}/> */}
@@ -78,8 +119,7 @@ function Cambios() {
                                 }}
                             /> */}
 
-                    <CurrencyFormat placeholder="Ingrese la cantidad" className="form-control" decimalSeparator="," thousandSeparator={"."} allowNegative={false}
-                      ref={copInput}
+                    <CurrencyFormat id="copInput" placeholder="Ingrese la cantidad" className="form-control" decimalSeparator="," thousandSeparator={"."} allowNegative={false}
                       onChange={e => {
                         const valor = e.target.value.replace(/\./g, "").replace(/,/g, ".")
                         setCop(valor)
@@ -108,16 +148,16 @@ function Cambios() {
             </Card.Footer>
           </Card>
         </Col>
-        <Col className="items-body2 col-12 col-sm-12 col-md-8 col-lg-8 " >
+        <Col className="items-body2" xl={{ span: 6, offset: 1 }} lg={8} md={7} sm={12} xs={12} >
           <h2 className="text-center">Seleciona tu banco</h2>
           <Row>
             {bancos.map(banco => (
-              <Col>
-                <Card className="card-tasa">
+              <Col lg={3} md={6} sm={6} xs={12} className="text-center">
+                <Card className="card-tasa d-inline-block border-0 mb-3" >
                   <Card.Body className="text-center">
                     <img src={banco.foto} style={{ height: "40px" }} />
-                    <p className="m-0">Tasa</p>
-                    <p className="m-0">{banco.tasa}</p>
+                    <p className="m-0 h6">Tasa</p>
+                    <p className="m-0 f-08r text-muted"><FontAwesomeIcon icon={faChartLine} className="icon" />{' '}{banco.tasa}</p>
                   </Card.Body>
                 </Card>
               </Col>
