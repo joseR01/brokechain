@@ -22,7 +22,7 @@ const Menu = () => {
   <Nav className="ml-auto">
           <Nav.Link as={NavLink} to={"/chat"}>Chat</Nav.Link>
           <Nav.Link as={NavLink} to={"/cambios"}>Cambios</Nav.Link>
-          <Button id="loginButton" className="text-white ml-4" variant="secondary">Acceder</Button>
+          <Button id="loginButton" className="text-white" variant="secondary">Acceder</Button>
   </Nav>
   </Navbar.Collapse>
 

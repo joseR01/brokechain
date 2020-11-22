@@ -91,17 +91,6 @@ function Cambios() {
             </Card.Header>
             <Card.Body className="bg-white">
               <Form>
-                <Form.Group >
-                  <Form.Label>Tasa de <span style={{ fontWeight: "bold" }}>BOD</span> </Form.Label>
-                  <InputGroup className="mb-2 mr-sm-2">
-                    <InputGroup.Prepend>
-                      <InputGroup.Text style={{ width: "57px" }} className="bg-white p-0 justify-content-center">
-                        <img src={bod} style={{ width: "35px" }} />
-                      </InputGroup.Text>
-                    </InputGroup.Prepend>
-                    <FormControl value="0.0095" disabled />
-                  </InputGroup>
-                </Form.Group>
 
                 <Form.Group >
                   <Form.Label>Pesos a Cambiar </Form.Label>
@@ -128,7 +117,17 @@ function Cambios() {
                     />
                   </InputGroup>
                 </Form.Group>
-
+                <Form.Group >
+                  <Form.Label>Tasa de <span style={{ fontWeight: "bold" }}>BOD</span> </Form.Label>
+                  <InputGroup className="mb-2 mr-sm-2">
+                    <InputGroup.Prepend>
+                      <InputGroup.Text style={{ width: "57px" }} className="bg-white p-0 justify-content-center">
+                        <img src={bod} style={{ width: "35px" }} />
+                      </InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl value="0.0095" disabled />
+                  </InputGroup>
+                </Form.Group>
                 <Form.Group >
                   <Form.Label>Bolivares a Recibir </Form.Label>
                   <InputGroup className="mb-2 mr-sm-2">
