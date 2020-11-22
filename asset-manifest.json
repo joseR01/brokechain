@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/brokechain/static/css/main.604cac0a.chunk.css",
-    "main.js": "/brokechain/static/js/main.c5715344.chunk.js",
-    "main.js.map": "/brokechain/static/js/main.c5715344.chunk.js.map",
+    "main.css": "/brokechain/static/css/main.93bafbfd.chunk.css",
+    "main.js": "/brokechain/static/js/main.556415c1.chunk.js",
+    "main.js.map": "/brokechain/static/js/main.556415c1.chunk.js.map",
     "runtime-main.js": "/brokechain/static/js/runtime-main.5607c649.js",
     "runtime-main.js.map": "/brokechain/static/js/runtime-main.5607c649.js.map",
     "static/css/2.26a6ae56.chunk.css": "/brokechain/static/css/2.26a6ae56.chunk.css",
-    "static/js/2.74dea960.chunk.js": "/brokechain/static/js/2.74dea960.chunk.js",
-    "static/js/2.74dea960.chunk.js.map": "/brokechain/static/js/2.74dea960.chunk.js.map",
+    "static/js/2.93656666.chunk.js": "/brokechain/static/js/2.93656666.chunk.js",
+    "static/js/2.93656666.chunk.js.map": "/brokechain/static/js/2.93656666.chunk.js.map",
     "index.html": "/brokechain/index.html",
-    "precache-manifest.7efb20b5662e51c253d1487cc2d60322.js": "/brokechain/precache-manifest.7efb20b5662e51c253d1487cc2d60322.js",
+    "precache-manifest.e8cc6ac2b2cb1a1374dacb178fffe4aa.js": "/brokechain/precache-manifest.e8cc6ac2b2cb1a1374dacb178fffe4aa.js",
     "service-worker.js": "/brokechain/service-worker.js",
     "static/css/2.26a6ae56.chunk.css.map": "/brokechain/static/css/2.26a6ae56.chunk.css.map",
-    "static/css/main.604cac0a.chunk.css.map": "/brokechain/static/css/main.604cac0a.chunk.css.map",
-    "static/js/2.74dea960.chunk.js.LICENSE.txt": "/brokechain/static/js/2.74dea960.chunk.js.LICENSE.txt",
+    "static/css/main.93bafbfd.chunk.css.map": "/brokechain/static/css/main.93bafbfd.chunk.css.map",
+    "static/js/2.93656666.chunk.js.LICENSE.txt": "/brokechain/static/js/2.93656666.chunk.js.LICENSE.txt",
     "static/media/banescop.png": "/brokechain/static/media/banescop.ad4c6210.png",
     "static/media/bodp.png": "/brokechain/static/media/bodp.8a0984bb.png",
     "static/media/foto.png": "/brokechain/static/media/foto.cd804b0e.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.5607c649.js",
     "static/css/2.26a6ae56.chunk.css",
-    "static/js/2.74dea960.chunk.js",
-    "static/css/main.604cac0a.chunk.css",
-    "static/js/main.c5715344.chunk.js"
+    "static/js/2.93656666.chunk.js",
+    "static/css/main.93bafbfd.chunk.css",
+    "static/js/main.556415c1.chunk.js"
   ]
 }
