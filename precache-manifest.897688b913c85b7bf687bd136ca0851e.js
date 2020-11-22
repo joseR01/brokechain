@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56c3e8a2f223f9074df1c8c3905af6a0",
+    "revision": "1c07b1bbbe42fc8462cc8f4c42f83356",
     "url": "/brokechain/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brokechain/static/css/2.26a6ae56.chunk.css"
   },
   {
-    "revision": "7515f8d1adc86e1b2c8e",
-    "url": "/brokechain/static/css/main.93bafbfd.chunk.css"
+    "revision": "d28f226d4761a39981e1",
+    "url": "/brokechain/static/css/main.c1da7d88.chunk.css"
   },
   {
     "revision": "1a4e40b0a3e3c0f91d8e",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brokechain/static/js/2.93656666.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7515f8d1adc86e1b2c8e",
+    "revision": "d28f226d4761a39981e1",
     "url": "/brokechain/static/js/main.556415c1.chunk.js"
   },
   {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/brokechain/static/css/main.93bafbfd.chunk.css",
+    "main.css": "/brokechain/static/css/main.c1da7d88.chunk.css",
     "main.js": "/brokechain/static/js/main.556415c1.chunk.js",
     "main.js.map": "/brokechain/static/js/main.556415c1.chunk.js.map",
     "runtime-main.js": "/brokechain/static/js/runtime-main.5607c649.js",
@@ -9,10 +9,10 @@
     "static/js/2.93656666.chunk.js": "/brokechain/static/js/2.93656666.chunk.js",
     "static/js/2.93656666.chunk.js.map": "/brokechain/static/js/2.93656666.chunk.js.map",
     "index.html": "/brokechain/index.html",
-    "precache-manifest.e8cc6ac2b2cb1a1374dacb178fffe4aa.js": "/brokechain/precache-manifest.e8cc6ac2b2cb1a1374dacb178fffe4aa.js",
+    "precache-manifest.897688b913c85b7bf687bd136ca0851e.js": "/brokechain/precache-manifest.897688b913c85b7bf687bd136ca0851e.js",
     "service-worker.js": "/brokechain/service-worker.js",
     "static/css/2.26a6ae56.chunk.css.map": "/brokechain/static/css/2.26a6ae56.chunk.css.map",
-    "static/css/main.93bafbfd.chunk.css.map": "/brokechain/static/css/main.93bafbfd.chunk.css.map",
+    "static/css/main.c1da7d88.chunk.css.map": "/brokechain/static/css/main.c1da7d88.chunk.css.map",
     "static/js/2.93656666.chunk.js.LICENSE.txt": "/brokechain/static/js/2.93656666.chunk.js.LICENSE.txt",
     "static/media/banescop.png": "/brokechain/static/media/banescop.ad4c6210.png",
     "static/media/bodp.png": "/brokechain/static/media/bodp.8a0984bb.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.5607c649.js",
     "static/css/2.26a6ae56.chunk.css",
     "static/js/2.93656666.chunk.js",
-    "static/css/main.93bafbfd.chunk.css",
+    "static/css/main.c1da7d88.chunk.css",
     "static/js/main.556415c1.chunk.js"
   ]
 }
