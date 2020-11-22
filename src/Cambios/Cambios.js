@@ -6,7 +6,7 @@ import bod from '../img/bodp2.png'
 import mercantil from '../img/mercantilp.png'
 import CurrencyFormat from 'react-currency-format';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartLine } from '@fortawesome/free-solid-svg-icons'
+import { faChartLine, faCrown } from '@fortawesome/free-solid-svg-icons'
 
 const bancosData = [
   {
@@ -152,9 +152,10 @@ function Cambios() {
         <h3 id="selectBankTitle" className="font-italic">Seleciona tu banco...</h3>
           <Container fluid>
             <Row className="column-tasas pt-3">
-              {bancos.map(banco => (
+              {bancos.map((banco, index) => (
                 <Col lg={3} md={6} sm={6} xs={12} className="text-center">
                   <Card className="card-tasa d-inline-block border-0 mb-3" >
+                  { index === 0 && <FontAwesomeIcon icon={faCrown} className="icon text-secondary crown-icon" /> }
                     <Card.Body className="text-center p-0 py-3">
                       <img src={banco.foto} style={{ height: "40px"}} />
                       <p className="m-0 h6">Tasa</p>
