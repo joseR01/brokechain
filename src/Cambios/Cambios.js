@@ -99,7 +99,7 @@ function Cambios() {
                         <img src={bod} style={{ width: "35px" }} />
                       </InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl disabled className="bg-white" />
+                    <FormControl value="0.0095" disabled />
                   </InputGroup>
                 </Form.Group>
 
@@ -137,7 +137,7 @@ function Cambios() {
                         VES
                                 </InputGroup.Text>
                     </InputGroup.Prepend>
-                    <FormControl disabled className="bg-white" />
+                    <FormControl disabled />
                   </InputGroup>
                 </Form.Group>
                 <Button block variant="secondary" className="text-white">Enviar</Button>

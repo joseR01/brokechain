@@ -20,6 +20,8 @@ $container-max-widths: (
         xl: 1340px
 );
 
+$input-disabled-bg: #e0d1e6;
+
 @import "~bootstrap/scss/bootstrap";
 
 body {
