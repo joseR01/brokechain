@@ -123,12 +123,11 @@ function Cambios() {
                 </Form.Group>
                 {selectBank == "" ? 
                 (<>
-                {/* <h5 className=" mt-4 pb-1 pt-0 text-primary border-bottom border-primary rounded">seleciona tu banco...</h5>
-                <FontAwesomeIcon icon={faHandPointRight} className="icon text-secondary h2 ml-1" /> */}
-                <br/>
-                <h5 className="text-primary d-inline">seleciona tu banco...</h5>
-                <FontAwesomeIcon icon={faHandPointRight} className="icon text-secondary h2 float-right" />
-                <hr className="bg-primary"/>
+                <div className="mt-4">
+                  <h5 className="text-primary d-inline">Selecciona tu banco...</h5>
+                  <FontAwesomeIcon icon={faHandPointRight} className="icon text-secondary h2 float-right" />
+                  <hr className="bg-primary"/>
+                </div>
                 </>)
                 :
                 (
