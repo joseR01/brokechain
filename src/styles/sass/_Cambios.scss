@@ -40,4 +40,34 @@
     left: 5px;
     position: absolute;
   }
+
+  @media (max-width: 576px){
+    .mostrar{
+      display:contents ;
+    }
+
+    .ocultar{
+      display:none;
+    }
+  }
+
+  @media (max-width: 768px){
+    .mostrar{
+      display:contents ;
+    }
+
+    .ocultar{
+      display:none;
+    }
+  }
+
+  @media (min-width: 768px){
+    .mostrarmin{
+      display:contents ;
+    }
+
+    .ocultarmin{
+      display:none;
+    }
+  }
 }

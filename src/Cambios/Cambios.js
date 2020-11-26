@@ -70,6 +70,7 @@ const bancosData = [
 function Cambios() {
   const [bancos, setBancos] = useState(bancosData)
   const [cop, setCop] = useState("")
+
   const [selectBank, setSelectBank] = useState("")
   
   const exchange = ()=>{
@@ -121,30 +122,74 @@ function Cambios() {
                     />
                   </InputGroup>  
                 </Form.Group>
-                {selectBank == "" ? 
-                (<>
-                <div className="mt-4">
-                  <h5 className="text-primary d-inline">Selecciona tu banco...</h5>
-                  <FontAwesomeIcon icon={faHandPointRight} className="icon text-secondary h2 float-right" />
-                  <hr className="bg-primary"/>
+                {/* PARTE QUE SE MUESTRA A MAS DE 768PX ------------------------------------------------------*/}
+                <div className="ocultar">
+                    {selectBank == "" ? 
+                    (<>
+                    <div className="mt-4">
+                      <h5 className="text-primary d-inline">Selecciona tu banco...</h5>
+                      <FontAwesomeIcon icon={faHandPointRight} className="icon text-secondary h2 float-right" />
+                      <hr className="bg-primary"/>
+                    </div>
+                    </>)
+                    :
+                    (
+                      <Form.Group >
+                      <Form.Label>Tasa de <span style={{ fontWeight: "bold" }}>{selectBank.nombre}</span> </Form.Label>
+                      <InputGroup className="mb-2 mr-sm-2">
+                        <InputGroup.Prepend>
+                          <InputGroup.Text style={{ width: "57px" }} className="bg-white p-0 justify-content-center">
+                            <img src={selectBank.foto} style={{ width: "35px" }} />
+                          </InputGroup.Text>
+                        </InputGroup.Prepend>
+                        <FormControl value={selectBank.tasa} disabled />
+                      </InputGroup>
+                    </Form.Group>
+                    )
+                    }
                 </div>
-                </>)
-                :
-                (
-                  <Form.Group >
-                  <Form.Label>Tasa de <span style={{ fontWeight: "bold" }}>{selectBank.nombre}</span> </Form.Label>
-                  <InputGroup className="mb-2 mr-sm-2">
-                    <InputGroup.Prepend>
-                      <InputGroup.Text style={{ width: "57px" }} className="bg-white p-0 justify-content-center">
+                {/* PARTE QUE SE MUESTA A MENOS DE 768PX--------------------------------------------------- */}
+                    <div className="ocultarmin">
+                      <Form.Group>
+                        <Form.Label className="text-primary h-5">Selecciona tu banco...</Form.Label>
+                        <InputGroup className="mb-2 mr-sm-2">
+                        <InputGroup.Prepend>
+                        <InputGroup.Text style={{ width: "57px" }} className="bg-white p-0 justify-content-center">
                         <img src={selectBank.foto} style={{ width: "35px" }} />
-                      </InputGroup.Text>
-                    </InputGroup.Prepend>
-                    <FormControl value={selectBank.tasa} disabled />
-                  </InputGroup>
-                </Form.Group>
-                )
-                }
-                
+                          </InputGroup.Text>
+                          </InputGroup.Prepend>
+                        <Form.Control as="select" 
+                          onChange={(e)=>{
+                            let bancoSeleccionado = bancos.find(banco => banco.id === Number(e.target.value))
+                            let value = e.target.value;
+                            if(value == 0){
+                              // setSelectBank(
+                              //   {id: null, nombre: null, foto: null, tasa:0}
+                              // )
+                              setSelectBank({}
+                              )
+                            }else{
+                              setSelectBank(bancoSeleccionado)
+
+                            }
+                            console.log(value)
+                                                        
+                          }}
+                        >
+                            <option value={0}>Selecciona tu Banco</option>
+                            {
+                              bancos.map((banco)=>(
+                              <option value={banco.id}>
+                              
+                                {banco.nombre}
+                              </option>))  
+                            }
+                        </Form.Control>
+                        </InputGroup>
+                      </Form.Group>
+                      {console.log(selectBank)}
+                    </div>
+                {/* FIN DE MOSTRAR Y OCULTAR-------------------------------- */}
 
                 <Form.Group >
                   <Form.Label>Bolivares a Recibir </Form.Label>
@@ -154,7 +199,7 @@ function Cambios() {
                         VES
                                 </InputGroup.Text>
                     </InputGroup.Prepend>
-                    <CurrencyFormat className="form-control" value={exchange().toFixed(2)} displayType={'text'} thousandSeparator={true} prefix={'Bfs: '}  />
+                    <CurrencyFormat className="form-control" value={exchange().toFixed(0)} displayType={'text'} decimalSeparator="," thousandSeparator={"."} allowNegative={false} prefix={""}  />
                   </InputGroup>
                 </Form.Group>
                 <Button block variant="secondary" className="text-white" >Enviar</Button>
@@ -165,7 +210,8 @@ function Cambios() {
             </Card.Footer>
           </Card>
         </Col>
-        <Col  xl={{ span: 6, offset: 1 }} lg={8} md={7} sm={12} xs={12} >
+
+        <Col  xl={{ span: 6, offset: 1 }} lg={8} md={7} sm={12} xs={12} className="ocultar">
         <h3 id="selectBankTitle" className="font-italic">Seleciona tu banco...</h3>
           <Container fluid>
             <Row className="column-tasas pt-3">
